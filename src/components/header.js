@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
-const getTheYear = () => {
-    const newDate = new Date;
-    return newDate.getFullYear();
+class Header extends Component {
+    render (){
+        return (
+            <header>
+                <div>Logo</div>
+                <input/>
+            </header>
+        )
+    }
 }
 
-const Header = () => {
-    return <div> It's the year { getTheYear() }</div>
-}
 
 export default Header;
