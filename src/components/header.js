@@ -7,6 +7,10 @@ class Header extends Component {
         console.log('I was clicked');
     }
 
+    inputChange () {
+        console.log('user typed something...')
+    }
+
     render (){
         return (
             <header>
@@ -14,7 +18,9 @@ class Header extends Component {
                 className='logo'
                 onClick={this.hello}
                 >Logo</div>
-                <input/>
+                <input
+                onChange={this.inputChange}
+                />
             </header>
         )
     }
